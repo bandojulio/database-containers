@@ -1,9 +1,9 @@
-*** Start Mongo e Redis Databases
+### Start Mongo e Redis Databases
 ```
 docker-compose up -d
 ```
 
-*** Stop Mongo e Redis Databases
+### Stop Mongo e Redis Databases
 ```
 docker-compose down
 ```
