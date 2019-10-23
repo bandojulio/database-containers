@@ -3,6 +3,8 @@ version: "2"
 networks:
   databases:
     driver: bridge
+volumes:
+  mongo-data:
 services:
   redis:
     image: redis
@@ -15,6 +17,8 @@ services:
   mongo:
     image: mongo
     restart: always
+    volumes:
+      - mongo-data:/mongo-data
     ports:
       - "27017:27017"
     networks: 
